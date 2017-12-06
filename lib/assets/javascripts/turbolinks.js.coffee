@@ -261,7 +261,7 @@ CSRFToken =
       current.node.setAttribute 'content', latest
 
 createDocument = (html) ->
-  doc = document.documentElement.cloneNode()
+  doc = document.documentElement.cloneNode true
   doc.innerHTML = html
   doc.head = doc.querySelector 'head'
   doc.body = doc.querySelector 'body'
